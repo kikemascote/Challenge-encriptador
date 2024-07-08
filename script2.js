@@ -14,7 +14,6 @@ function validarTexto(texto) {
     }
 }
 
-
 let btnCifrar = document.querySelector("#btn-cifrar");
 btnCifrar.addEventListener("click", function() {
     let textInput = document.querySelector("#input-texto").value;
@@ -28,12 +27,6 @@ btnCifrar.addEventListener("click", function() {
         textInput = "";
     }
 });
-//Laves de cifrado
-// `La letra "e" es convertida para "enter"`
-// `La letra "i" es convertida para "imes"`
-// `La letra "a" es convertida para "ai"`
-// `La letra "o" es convertida para "ober"`
-// `La letra "u" es convertida para "ufat"`
 
 const reglas = { "e": "enter", "i": "imes", "a": "ai", "o": "ober", "u": "ufat" };
 
@@ -59,7 +52,6 @@ btnCopiar.addEventListener("click", function() {
     navigator.clipboard.writeText(document.querySelector("#msg").value);
     document.querySelector("#input-texto").value = "";
 });
-
 
 let btnDescifrar = document.querySelector("#btn-descifrar");
 btnDescifrar.addEventListener("click", function() {
